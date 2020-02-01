@@ -8,8 +8,6 @@ interface DemoService {
 
     fun findAllDemo(): List<DemoModel>
 
-    fun findDemoById(demoId: Int): DemoModel
-
     fun deleteDemo(demoId: Int)
 
 }

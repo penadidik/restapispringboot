@@ -22,10 +22,6 @@ open class DemoServiceImpl: DemoService {
         return demoRepo.findAll()
     }
 
-    override fun findDemoById(demoId: Int): DemoModel {
-        return demoRepo.findByIdOrNull(demoId)!!
-    }
-
     override fun deleteDemo(demoId: Int) {
         demoRepo.deleteById(demoId)
     }

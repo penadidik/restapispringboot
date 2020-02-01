@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.*
 
 @Controller
-class DemoController {
+class DemoController: BaseController() {
 
     @Autowired
     private lateinit var demoService: DemoService
@@ -17,18 +17,17 @@ class DemoController {
     }
 
     @PostMapping("/demo")
-    fun insertupdate(@RequestBody demo: DemoModel){
-        demoService.saveDemo(demo)
+    @ResponseBody
+    fun insertupdate(@RequestBody demo: String): DemoModel {
+        val dataDemo = convertResponseToModel(demo, "data", DemoModel::class.java)
+        return demoService.saveDemo(dataDemo)
     }
 
-    @GetMapping("/demo/viewby/{id}")
-    fun viewbyid(@PathVariable(value = "id") id: Int): DemoModel{
-        return demoService.findDemoById(id)
-    }
-
-    @DeleteMapping
-    fun delete(@PathVariable(value = "id") id: Int){
-        return demoService.deleteDemo(id)
+    @PostMapping("/demo/del")
+    @ResponseBody
+    fun delete(@RequestBody id: String) {
+        val data = convertResponseToJson(id, "id")
+        return demoService.deleteDemo(data.toString().toInt())
     }
 
 }
