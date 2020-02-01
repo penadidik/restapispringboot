@@ -1,5 +1,6 @@
-package com.example.demokotlin
+package com.example.demokotlin.app
 
+import com.example.demokotlin.base.BaseController
 import com.example.demokotlin.service.DemoService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller

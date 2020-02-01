@@ -1,9 +1,8 @@
 package com.example.demokotlin.service
 
-import com.example.demokotlin.DemoModel
-import com.example.demokotlin.DemoRepository
+import com.example.demokotlin.app.DemoModel
+import com.example.demokotlin.app.DemoRepository
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 

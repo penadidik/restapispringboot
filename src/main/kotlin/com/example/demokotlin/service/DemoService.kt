@@ -1,6 +1,6 @@
 package com.example.demokotlin.service
 
-import com.example.demokotlin.DemoModel
+import com.example.demokotlin.app.DemoModel
 
 interface DemoService {
 

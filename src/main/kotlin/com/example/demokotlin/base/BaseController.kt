@@ -1,8 +1,7 @@
-package com.example.demokotlin
+package com.example.demokotlin.base
 
 import org.apache.logging.log4j.Logger
 import java.io.StringReader
-import com.fasterxml.jackson.databind.ObjectMapper
 import com.google.gson.*
 import com.google.gson.stream.JsonReader
 

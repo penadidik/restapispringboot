@@ -1,4 +1,4 @@
-package com.example.demokotlin
+package com.example.demokotlin.app
 
 import javax.persistence.*
 
