@@ -29,8 +29,8 @@ We assume that You already installed maven and JDK 8 (minimum) on your environme
 It is free to make changes and implementations and make the code more evolved.
 
 ---
-Lintaspena.org - Development Team
-* website : http://lintaspena.org
-* contact : 087812538105
-* email  : admin@lintaspena.org
+### [Didik Maryono](https://penadidik.info)
+
+- Full Stack Developer Indonesia
+- Co-Founder and CTO [Dentist Care Indonesia](https://dentistcare.id/)
 * If you interested this program call us.
